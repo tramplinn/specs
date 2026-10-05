@@ -1,33 +1,29 @@
 # Tramplin Specs
 
-Репозиторий спецификаций учебной платформы Tramplin.
-Код живёт в отдельных репозиториях (`backend`, `frontend`, `email-service`,
-`mcp-server`, `infra`), здесь — то, *зачем* и *для кого* он написан.
+Code lives in `backend`, `frontend`, `email-service`, `mcp-server`, and `infra`.
+This repository explains *why* it exists and *who* it's for.
 
-## Структура
+## Structure
 
 ```text
 specs/
   product/
-    business-value.md   бизнес-ценность: проблемы, выгоды, метрики
-    products.md         продукты платформы и их границы
-    use-cases.md        пользовательские кейсы по ролям
+    business-value.md   problems, benefits, metrics
+    products.md         products and their boundaries
+    use-cases.md        use cases by role
   changes/
-    localization.md     RU/EN: интерфейс, версии материалов, перевод и редактура
-    projects.md         проекты пользователей в публичном профиле
+    localization.md     RU/EN interface and content
+    projects.md         user projects in public profiles
 ```
 
-## Спецификации к реализации
+## Upcoming changes
 
-- [Двуязычная платформа RU/EN](changes/localization.md) — выбор языка,
-  хранение и независимое редактирование материалов, автоперевод, публикация
-  и критерии приёмки.
-- [Проекты пользователей](changes/projects.md) — карточки проектов с README,
-  командой и ссылками в публичном профиле; черновик.
+- [RU/EN localization](changes/localization.md) — language switch, separate
+  content per language, auto-translation, acceptance criteria.
+- [User projects](changes/projects.md) — project cards in public profiles; draft.
 
-## Правила
+## Rules
 
-- Один документ — одна тема; ссылки между документами относительные.
-- Гипотезы и целевые значения метрик помечаются явно — это не факты.
-- Технические PRD фич (например, авторинг алгозадач через MCP) остаются
-  рядом с кодом сервиса; сюда — продуктовый уровень.
+- One document per topic; use relative links.
+- Mark hypotheses and target metrics as such.
+- Technical PRDs stay next to the code; this repo is for product decisions.
